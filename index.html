@@ -3,9 +3,118 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script
+      src="https://kit.fontawesome.com/e30232a414.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Welcome</title>
   </head>
   <body>
-    hello
+    <header class="header id=top">
+      <div class="topBar flex">
+        <div class="logo"></div>
+        <nav role="navigation" class="nav">
+          <div class="hamburger" id="hamburger">
+            <input type="checkbox" name="hamburger" class="hamburger-input" />
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </div>
+          <ul class="nav-list" id="nav-list">
+            <li class="nav-item"><a href="/">Home</a></li>
+            <li class="nav-item"><a href="/offer.html">Offer</a></li>
+            <li class="nav-item"><a href="/">About Us</a></li>
+            <li class="nav-item"><a href="/">Document</a></li>
+            <li class="nav-item"><a href="/">Carrier</a></li>
+            <li class="nav-item contact"><a href="/">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="hero">
+        <div class="hero-content flex f-col">
+          <h1 class="hero-title header-1">FBC <strong>Broker</strong></h1>
+          <p class="hero-text">
+            FBC Broker is a relatively young, growing company that provides a
+            wide range of insurance brokerage services. The company was
+            established as part of the change of the current status of a
+            brokerage company existing on the market for 8 years.
+          </p>
+          <button class="btn hero-button">Read more...</button>
+        </div>
+      </div>
+      <a href="#main" id="arrowLink">
+        <button class="header-arrow" id="header-arrow">
+          <i class="fas fa-arrow-down fa-2x"></i>
+        </button>
+      </a>
+    </header>
+    <main class="main" id="main">
+      <section class="about flex f-col">
+        <h2 class="about-header header-2">What do <strong>we do?</strong></h2>
+        <p class="about-text text">
+          Depending on the specificity of the activity, we offer our clients
+          services in the field of risk identification and various solutions to
+          minimize the existing threats:
+        </p>
+        <div class="about-item flex f-col">
+          <i class="fas fa-wallet fa-3x"></i>
+          <p class="about-item-text">Financial Advice</p>
+        </div>
+        <div class="about-item flex f-col">
+          <i class="fas fa-coins fa-3x"></i>
+          <p class="about-item-text">Financial Insurance</p>
+        </div>
+        <div class="about-item flex f-col">
+          <i class="fas fa-car fa-3x"></i>
+          <p class="about-item-text">Car Insurance and Protection</p>
+        </div>
+        <div class="about-item flex f-col">
+          <i class="fas fa-home fa-3x"></i>
+          <p class="about-item-text">Home Insurance and Protection</p>
+        </div>
+        <button class="btn about-button">Read more...</button>
+      </section>
+      <section class="news">
+        <h2 class="news-header header-2">News</h2>
+
+        <div class="news-letter-wrapper flex f-col">
+          <h3 class="news-letter header-2">
+            Need help to find the <strong>right service?</strong>
+          </h3>
+          <p class="news-letter-text">
+            Leave your phone number. We'll call you back!
+          </p>
+          <input
+            type="text"
+            id="name"
+            placeholder="Name"
+            class="news-letter-input"
+          />
+          <input
+            type="number"
+            id="name"
+            placeholder="Phone number"
+            class="news-letter-input"
+          />
+          <button class="btn news-letter-btn">send</button>
+        </div>
+      </section>
+    </main>
+    <footer class="footer flex f-col">
+      <div class="logo"></div>
+      <h4 class="footer-header">FBC Broker</h4>
+      <p class="footer-copyright">
+        All Rights Reserved © Copyright 2018 Designed by Mariusz Krawczyk
+      </p>
+      <div class="social-wrapper flex">
+        <i class="social-icon fab fa-facebook"></i>
+        <i class="social-icon fab fa-twitter"></i>
+        <i class="social-icon fab fa-instagram"></i>
+      </div>
+    </footer>
+    <script src="./js/script.js"></script>
   </body>
 </html>
