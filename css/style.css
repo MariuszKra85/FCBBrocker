@@ -80,12 +80,26 @@ ul {
 }
 
 .logo {
-  margin-top: 10px;
   width: 80px;
   height: 80px;
+  background-repeat: no-repeat;
   background-image: url(../assets/logo/logo.png);
   background-size: contain;
   z-index: 20;
+}
+
+.logo-wrapper {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo-text {
+  opacity: 0;
+  position: relative;
+  font-size: 1.8rem;
+  font-weight: 500;
+  top: -60px;
 }
 
 .nav-list {
@@ -95,8 +109,6 @@ ul {
   list-style: none;
   top: -250px;
   left: 0;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
 }
 
 .nav-item {
@@ -120,6 +132,16 @@ ul {
   color: white;
 }
 
+.wrapper {
+  margin: 0 30px;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .contact {
   border-radius: 5px;
   background-color: #4284df;
@@ -130,7 +152,6 @@ ul {
   display: block;
   position: relative;
   margin-right: 30px;
-  top: 10px;
   z-index: 1;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -210,7 +231,7 @@ ul {
   background-color: #93add3;
   background-position: center;
   background-image: url(../assets/img/broker.jpg);
-  background-size: auto 100%;
+  background-size: cover;
   background-blend-mode: multiply;
 }
 
@@ -225,6 +246,8 @@ ul {
 }
 
 .hero-text {
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
   margin: 20px;
   font-size: 1.3rem;
 }
@@ -268,6 +291,8 @@ ul {
 }
 
 .about-text {
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
   margin: 0px 20px;
 }
 
@@ -320,6 +345,7 @@ ul {
 
 .news-letter-text {
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .news-letter-input {
@@ -424,6 +450,9 @@ ul {
 }
 
 .offerDesc {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #eeeeee;
   padding: 40px;
 }
@@ -441,10 +470,20 @@ ul {
           box-shadow: 0px 1px 4px #c9c9c9;
   text-align: center;
   min-width: 250px;
-  max-width: 350px;
+  max-width: 300px;
   height: 220px;
   margin: 20px;
   padding: 20px 15px;
+}
+
+.card-wrapper {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .card-num {
@@ -496,5 +535,121 @@ ul {
 
 .person-social-wrapper {
   margin-top: 20px;
+}
+
+@media screen and (min-width: 740px) {
+  .logo-text {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    font-size: 1.2rem;
+    opacity: 1;
+    -webkit-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+    top: 0;
+  }
+  .hero-text {
+    -webkit-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+    margin: 30px 150px;
+  }
+  .about-text {
+    font-size: 1.2rem;
+    -webkit-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+    margin: 50px 60px;
+  }
+  .about-items-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 80%;
+  }
+  .news-letter-wrapper {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .news-letter-input {
+    width: 400px;
+  }
+  .hamburger {
+    display: none;
+  }
+  .nav-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    top: 0px;
+    right: 0px;
+    margin-right: 10px;
+  }
+  .nav-item {
+    padding: 5px 10px;
+    width: 90px;
+    margin: 5px auto;
+    color: black;
+    text-align: center;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+  .forCustomer {
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    width: 70%;
+    font-size: 1.6rem;
+  }
+  .card-text {
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    margin-top: 30px;
+  }
+  .card-wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 90%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .aboutus {
+    background-image: url(../assets/img/broker-2.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+  }
+  .aboutus-content {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100%;
+    margin-left: 80px;
+    background-color: white;
+    width: 400px;
+  }
+  .aboutus-header {
+    margin-bottom: 60px;
+    font-size: 2.8rem;
+  }
+  .wrapper {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .person {
+    width: 200px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

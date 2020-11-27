@@ -15,7 +15,10 @@
   <body>
     <header class="header id=top">
       <div class="topBar flex">
-        <div class="logo"></div>
+        <div class="logo-wrapper flex">
+          <div class="logo"></div>
+          <p class="logo-text flex">FBC <strong>Broker</strong></p>
+        </div>
         <nav role="navigation" class="nav">
           <div class="hamburger" id="hamburger">
             <input type="checkbox" name="hamburger" class="hamburger-input" />
@@ -59,21 +62,23 @@
           services in the field of risk identification and various solutions to
           minimize the existing threats:
         </p>
-        <div class="about-item flex f-col">
-          <i class="fas fa-wallet fa-3x"></i>
-          <p class="about-item-text">Financial Advice</p>
-        </div>
-        <div class="about-item flex f-col">
-          <i class="fas fa-coins fa-3x"></i>
-          <p class="about-item-text">Financial Insurance</p>
-        </div>
-        <div class="about-item flex f-col">
-          <i class="fas fa-car fa-3x"></i>
-          <p class="about-item-text">Car Insurance and Protection</p>
-        </div>
-        <div class="about-item flex f-col">
-          <i class="fas fa-home fa-3x"></i>
-          <p class="about-item-text">Home Insurance and Protection</p>
+        <div class="about-items-wrapper">
+          <div class="about-item flex f-col">
+            <i class="fas fa-wallet fa-3x"></i>
+            <p class="about-item-text">Financial Advice</p>
+          </div>
+          <div class="about-item flex f-col">
+            <i class="fas fa-coins fa-3x"></i>
+            <p class="about-item-text">Financial Insurance</p>
+          </div>
+          <div class="about-item flex f-col">
+            <i class="fas fa-car fa-3x"></i>
+            <p class="about-item-text">Car Insurance and Protection</p>
+          </div>
+          <div class="about-item flex f-col">
+            <i class="fas fa-home fa-3x"></i>
+            <p class="about-item-text">Home Insurance and Protection</p>
+          </div>
         </div>
         <button class="btn about-button">Read more...</button>
       </section>
