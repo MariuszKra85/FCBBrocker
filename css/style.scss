@@ -2,7 +2,7 @@
 
 $prime: #93add3;
 $second: #4284df;
-$bgcolor-prim: #f9f9f9;
+$bgcolor-prim: #eeeeee;
 html {
   scroll-behavior: smooth;
 }
@@ -30,6 +30,10 @@ ul {
   font-weight: 500;
   font-size: 1.8rem;
 }
+.header-3 {
+  font-weight: 500;
+  font-size: 1.4rem;
+}
 .btn {
   height: 50px;
   width: 180px;
@@ -47,6 +51,7 @@ ul {
   width: 100%;
 }
 .topBar {
+  z-index: 10;
   width: 100%;
   background-color: white;
   height: 90px;
@@ -290,6 +295,9 @@ ul {
     font-size: 1.6rem;
     margin-bottom: 30px;
   }
+  &-copyright {
+    text-align: center;
+  }
 }
 .social {
   &-wrapper {
@@ -322,4 +330,60 @@ ul {
 .offerDesc {
   background-color: $bgcolor-prim;
   padding: 40px;
+}
+.forCustomer {
+  text-align: center;
+}
+.card {
+  z-index: 1;
+  position: relative;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0px 1px 4px rgb(201, 201, 201);
+  text-align: center;
+  min-width: 250px;
+  max-width: 350px;
+  height: 220px;
+  margin: 20px;
+  padding: 20px 15px;
+
+  &-num {
+    bottom: 20px;
+    left: 45%;
+    position: absolute;
+    font-size: 1.1rem;
+    font-weight: 900;
+  }
+}
+.aboutus {
+  text-align: center;
+  &-text {
+    text-align: justify;
+    margin: 20px 35px;
+  }
+}
+
+.team {
+  align-items: center;
+}
+.person {
+  margin: 20px auto;
+  text-align: center;
+  align-items: center;
+  min-width: 300px;
+  max-width: 350px;
+  &-img {
+    margin-top: 20px;
+    width: 200px;
+    border-radius: 50%;
+  }
+  &-name {
+    margin: 20px 0;
+  }
+  &-desc {
+    font-size: 0.9rem;
+  }
+  &-social-wrapper {
+    margin-top: 20px;
+  }
 }

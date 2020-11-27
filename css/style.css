@@ -34,6 +34,11 @@ ul {
   font-size: 1.8rem;
 }
 
+.header-3 {
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+
 .btn {
   height: 50px;
   width: 180px;
@@ -60,6 +65,7 @@ ul {
 }
 
 .topBar {
+  z-index: 10;
   width: 100%;
   background-color: white;
   height: 90px;
@@ -256,7 +262,7 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #f9f9f9;
+  background-color: #eeeeee;
   text-align: center;
   padding-bottom: 60px;
 }
@@ -319,7 +325,7 @@ ul {
 .news-letter-input {
   margin-top: 10px;
   padding: 15px;
-  background-color: #f9f9f9;
+  background-color: #eeeeee;
   border: 1px solid #e6e4e4;
 }
 
@@ -359,7 +365,7 @@ ul {
   -webkit-transition: all 0.6s ease-in-out;
   transition: all 0.6s ease-in-out;
   color: black;
-  background-color: #f9f9f9;
+  background-color: #eeeeee;
 }
 
 .footer {
@@ -367,12 +373,16 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #f9f9f9;
+  background-color: #eeeeee;
 }
 
 .footer-header {
   font-size: 1.6rem;
   margin-bottom: 30px;
+}
+
+.footer-copyright {
+  text-align: center;
 }
 
 .social-wrapper {
@@ -414,7 +424,77 @@ ul {
 }
 
 .offerDesc {
-  background-color: #f9f9f9;
+  background-color: #eeeeee;
   padding: 40px;
+}
+
+.forCustomer {
+  text-align: center;
+}
+
+.card {
+  z-index: 1;
+  position: relative;
+  border-radius: 5px;
+  background-color: white;
+  -webkit-box-shadow: 0px 1px 4px #c9c9c9;
+          box-shadow: 0px 1px 4px #c9c9c9;
+  text-align: center;
+  min-width: 250px;
+  max-width: 350px;
+  height: 220px;
+  margin: 20px;
+  padding: 20px 15px;
+}
+
+.card-num {
+  bottom: 20px;
+  left: 45%;
+  position: absolute;
+  font-size: 1.1rem;
+  font-weight: 900;
+}
+
+.aboutus {
+  text-align: center;
+}
+
+.aboutus-text {
+  text-align: justify;
+  margin: 20px 35px;
+}
+
+.team {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.person {
+  margin: 20px auto;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 300px;
+  max-width: 350px;
+}
+
+.person-img {
+  margin-top: 20px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+.person-name {
+  margin: 20px 0;
+}
+
+.person-desc {
+  font-size: 0.9rem;
+}
+
+.person-social-wrapper {
+  margin-top: 20px;
 }
 /*# sourceMappingURL=style.css.map */
